@@ -10,4 +10,5 @@ class LoginPageLocators():
     REGISTRATION_MAIL = (By.NAME, "registration-email")
     LOGIN_MAIL = (By.NAME, "login-username")
 
-            
+class ProductPageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#add_to_basket_form > button")            
