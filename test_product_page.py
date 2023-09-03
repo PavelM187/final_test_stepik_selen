@@ -32,5 +32,3 @@ def test_guest_can_add_product_to_basket(browser, link):
     #time.sleep(300)
     page.should_be_message_about_adding()
     page.should_be_message_basket_total()
-    
-
