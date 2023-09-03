@@ -14,7 +14,6 @@ def test_guest_can_add_product_to_basket(browser):
     page = ProductPage(browser, link)   # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес 
     page.open()                      # открываем страницу
     page.go_to_product_page()
-    page.solve_quiz_and_get_code()
     page.should_not_be_success_message()
 
 def test_guest_cant_see_success_message(browser):
@@ -29,5 +28,4 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     page = ProductPage(browser, link)   # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес 
     page.open()                      # открываем страницу
     page.go_to_product_page()
-    page.solve_quiz_and_get_code()
     page.should_disappeared()    
