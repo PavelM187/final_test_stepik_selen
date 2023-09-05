@@ -20,4 +20,13 @@ class ProductPageLocators():
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")               
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+
+class BasketPageLocators():
+    BASKET_SEE = (By.CSS_SELECTOR, ".btn-group :nth-child(1)")
+    BASKET_EMPTY = (By.CSS_SELECTOR, "#content_inner>p")
+    BASKET_PRICE = (By.CSS_SELECTOR, "th.total.align-right")
+        
+    
+                   
