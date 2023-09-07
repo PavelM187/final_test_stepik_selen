@@ -7,7 +7,7 @@ from .locators import ProductPageLocators
 
 class ProductPage(BasePage):
     def go_to_product_page(self):
-        self.browser.find_element(*ProductPageLocators.LOGIN_LINK).click()
+        self.browser.find_element(*ProductPageLocators.BUTTON_BASKET).click()
         self.solve_quiz_and_get_code()
 
 
